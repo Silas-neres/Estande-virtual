@@ -5,211 +5,186 @@ import { Header } from "@/components/header"
 const products = [
   {
     id: 1,
-    name: "Ferro Fundido",
-    description: "Peças de ferro fundido de alta qualidade para reciclagem",
-    price: "R$ 2,50/kg",
-    image: "/ferro-fundido-reciclagem.png",
-    whatsappMessage: "Olá! Tenho interesse no Ferro Fundido. Poderia me dar mais informações?",
+    name: "Colunas 5/16",
+    description: "Colunas 5/16 6 metros",
+    price: "R$ 75,00/6m",
+    image: "/coluna5-4.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre as Colunas 5/16 disponíveis.",
   },
   {
     id: 2,
-    name: "Alumínio",
-    description: "Sucata de alumínio limpa e separada",
-    price: "R$ 4,20/kg",
-    image: "/aluminio-reciclagem-sucata.png",
-    whatsappMessage: "Olá! Gostaria de saber mais sobre o Alumínio disponível.",
+    name: "Perfil 75x40",
+    description: "Perfil 75x40 6 metros",
+    price: "R$ 125,00/6m",
+    image: "/perfil-2.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre os Perfis 75x40 disponíveis.",
   },
   {
     id: 3,
-    name: "Cobre",
-    description: "Fios e peças de cobre para reciclagem",
-    price: "R$ 18,50/kg",
-    image: "/cobre-fios-reciclagem.png",
-    whatsappMessage: "Olá! Tenho interesse no Cobre. Qual a disponibilidade?",
+    name: "Colunas 3/8",
+    description: "Colunas 3/8, 20x7 com 6 metros",
+    price: "R$ 115,00",
+    image: "/coluna3-2.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre as Colunas 3/8 disponíveis.",
   },
   {
     id: 4,
-    name: "Aço Inox",
-    description: "Sucata de aço inoxidável em bom estado",
-    price: "R$ 3,80/kg",
-    image: "/aco-inox-reciclagem.png",
-    whatsappMessage: "Olá! Gostaria de mais informações sobre o Aço Inox.",
+    name: "Piso elevado",
+    description: "Piso elevado de concreto",
+    price: "R$ 10,00",
+    image: "/pido-elevado-1.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre os Pisos Elevados disponíveis.",
   },
   {
     id: 5,
-    name: "Latão",
-    description: "Peças de latão para reciclagem industrial",
-    price: "R$ 12,30/kg",
-    image: "/latao-reciclagem-industrial.png",
-    whatsappMessage: "Olá! Tenho interesse no Latão. Poderia me passar mais detalhes?",
+    name: "Tesouras",
+    description: "Tesouras fabricadas de acordo com a medida desejada, encomende já!",
+    price: "R$ 120,00/m",
+    image: "/tesoura-1.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre as Tesouras disponíveis ",
   },
   {
     id: 6,
-    name: "Ferro Comum",
-    description: "Sucata de ferro comum limpa e classificada",
-    price: "R$ 0,85/kg",
-    image: "/ferro-comum-sucata-reciclagem.png",
-    whatsappMessage: "Olá! Gostaria de saber sobre a disponibilidade do Ferro Comum.",
+    name: "Cano PVC",
+    description: "A partir de R$ 35,00 (75mm), tamanhos variados",
+    price: "R$ 35,00",
+    image: "/cano-2.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre os Canos PVC disponíveis ",
   },
   {
     id: 7,
-    name: "Plástico PET",
-    description: "Garrafas e embalagens de plástico PET para reciclagem",
-    price: "R$ 1,20/kg",
-    image: "/plastico-pet-reciclagem.png",
-    whatsappMessage: "Olá! Tenho interesse no Plástico PET. Poderia me dar mais informações?",
+    name: "Tinta em Geral",
+    description: "Tintas variadas, a partir de 35,00 a lata de 3,6L, e 250,00 a lata de 18L",
+    price: "R$ 35,00/3,6L",
+    image: "/tinta-1.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre as Tintas disponíveis ",
   },
   {
     id: 8,
-    name: "Vidro",
-    description: "Sucata de vidro limpa e separada por cor",
-    price: "R$ 0,50/kg",
-    image: "/vidro-reciclagem.png",
-    whatsappMessage: "Olá! Gostaria de saber mais sobre o Vidro disponível.",
+    name: "Malhas",
+    description: "Malhas e Telas soldadas para construção civil",
+    price: "R$ 35,00",
+    image: "/malha-2.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre as Malhas disponíveis ",
   },
   {
     id: 9,
-    name: "Papelão",
-    description: "Sucata de papelão para reciclagem industrial",
-    price: "R$ 0,30/kg",
-    image: "/papelao-reciclagem-industrial.png",
-    whatsappMessage: "Olá! Tenho interesse no Papelão. Qual a disponibilidade?",
+    name: "Treliças",
+    description: "Treliças para construção civil",
+    price: "R$ 18,00/4m",
+    image: "/trelica-3.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre as Treliças disponíveis ",
   },
   {
     id: 10,
-    name: "Madeira",
-    description: "Resíduos de madeira para reciclagem e reaproveitamento",
-    price: "R$ 0,70/kg",
-    image: "/madeira-reciclagem.png",
-    whatsappMessage: "Olá! Gostaria de mais informações sobre a Madeira disponível.",
+    name: "Pratileiras",
+    description: "Pratileiras 2,40 metros de altura e plataforma de 45cmx92cm",
+    image: "/pratileira.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre as Pratileiras disponíveis ",
   },
   {
     id: 11,
-    name: "Borracha",
-    description: "Resíduos de borracha para reciclagem industrial",
-    price: "R$ 1,50/kg",
-    image: "/borracha-reciclagem-industrial.png",
-    whatsappMessage: "Olá! Tenho interesse na Borracha. Poderia me passar mais detalhes?",
+    name: "Base caixa d'água",
+    description: "Base para caixa d'água 500L, 1000L e 2000L",
+    image: "/base-dagua-1.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre as Bases para caixa d'água disponíveis ",
   },
   {
     id: 12,
-    name: "Tecido",
-    description: "Resíduos de tecido para reciclagem têxtil",
-    price: "R$ 0,90/kg",
-    image: "/tecido-reciclagem-textil.png",
-    whatsappMessage: "Olá! Gostaria de saber sobre a disponibilidade do Tecido.",
+    name: "Ferros de obra",
+    description: "Ferros de obra 6 - 25 mm",
+    image: "/ferro-obra-1.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre os Ferros de obra disponíveis ",
   },
   {
     id: 13,
-    name: "Chumbo",
-    description: "Sucata de chumbo para reciclagem industrial",
-    price: "R$ 7,50/kg",
-    image: "/chumbo-reciclagem-industrial.png",
-    whatsappMessage: "Olá! Tenho interesse no Chumbo. Poderia me dar mais informações?",
+    name: "Taças d'água",
+    image: "/taça-dagua-2.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre as Taças d'água disponíveis ",
   },
   {
     id: 14,
-    name: "Zinco",
-    description: "Peças de zinco para reciclagem",
-    price: "R$ 5,20/kg",
-    image: "/zinco-reciclagem.png",
-    whatsappMessage: "Olá! Gostaria de saber mais sobre o Zinco disponível.",
+    name: "Variados",
+    image: "/imagens_combinadas.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre os materiais variados disponíveis ",
   },
   {
     id: 15,
-    name: "Estanho",
-    description: "Sucata de estanho limpa e separada",
-    price: "R$ 6,80/kg",
-    image: "/estanho-reciclagem-sucata.png",
-    whatsappMessage: "Olá! Tenho interesse no Estanho. Qual a disponibilidade?",
+    name: "Cantoneiras",
+    image: "/cantoneira.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre as Cantoneiras disponíveis ",
   },    
   {
     id: 16,
-    name: "Níquel",
-    description: "Peças de níquel para reciclagem industrial",
-    price: "R$ 15,00/kg",
-    image: "/niquel-reciclagem-industrial.png",
-    whatsappMessage: "Olá! Gostaria de mais informações sobre o Níquel disponível.",  
+    name: "Pedras de mármore",
+    image: "/pedra-marmore-1.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre as Pedras de mármore disponíveis ",  
   },
   {
     id: 17,
-    name: "Magnésio",
-    description: "Sucata de magnésio para reciclagem",
-    price: "R$ 10,50/kg",
-    image: "/magnesio-reciclagem.png",
-    whatsappMessage: "Olá! Tenho interesse no Magnésio. Poderia me dar mais informações?",
+    name: "Argamamassa, gesso e rejunte",
+    image: "/argamassas_combinadas.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre as Argamassas, gesso e rejunte disponíveis ",
   },
   {
     id: 18,
-    name: "Titânio",
-    description: "Peças de titânio para reciclagem industrial",
-    price: "R$ 20,00/kg",
-    image: "/titanio-reciclagem-industrial.png",
-    whatsappMessage: "Olá! Gostaria de saber mais sobre o Titânio disponível.",
+    name: "Portões",
+    image: "/portoes.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre os Portões disponíveis ",
   },
   {
     id: 19,
-    name: "Cádmio",
-    description: "Sucata de cádmio para reciclagem",
-    price: "R$ 8,75/kg",
-    image: "/cadmio-reciclagem.png",
-    whatsappMessage: "Olá! Tenho interesse no Cádmio. Qual a disponibilidade?",
+    name: "Automóveis",
+    image: "/caminhoes (2).jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre os Automóveis disponíveis ",
   },
   {
     id: 20,
-    name: "Prata",
-    description: "Peças de prata para reciclagem e reaproveitamento",
-    price: "R$ 25,00/kg",
-    image: "/prata-reciclagem-reaproveitamento.png",
-    whatsappMessage: "Olá! Gostaria de mais informações sobre a Prata disponível.",
+    name: "Vigas",
+    image: "/viga-1.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre as Vigas disponíveis ",
   },
   {
     id: 21,
-    name: "Ouro",
-    description: "Sucata de ouro para reciclagem industrial",
-    price: "R$ 150,00/kg",
-    image: "/ouro-reciclagem-industrial.png",
-    whatsappMessage: "Olá! Tenho interesse no Ouro. Poderia me passar mais detalhes?",
+    name: "Escada",
+    image: "/escada-1.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre as Escadas disponíveis ",
   },
   {
     id: 22,
-    name: "Platina",
-    description: "Peças de platina para reciclagem",
-    price: "R$ 120,00/kg",
-    image: "/platina-reciclagem.png",
-    whatsappMessage: "Olá! Gostaria de saber sobre a disponibilidade da Platina.",
+    name: "Motrores",
+    image: "/motor-3.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre os Motores disponíveis ",
   },  
   { 
     id: 23,
-    name: "Paládio",
-    description: "Sucata de paládio para reciclagem industrial",
-    price: "R$ 130,00/kg",
-    image: "/paladio-reciclagem-industrial.png",
-    whatsappMessage: "Olá! Tenho interesse no Paládio. Poderia me dar mais informações?",
+    name: "Pilares estruturais",
+    image: "/pilar-estrutural-1.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre os Pilares estruturais disponíveis ",
   },
   {    
     id: 24,
-    name: "Ródio",
-    description: "Peças de ródio para reciclagem",
-    price: "R$ 200,00/kg",
-    image: "/rodio-reciclagem.png",
-    whatsappMessage: "Olá! Gostaria de saber mais sobre o Ródio disponível.",
+    name: "Telhas de zinco",
+    image: "/telha de zinco.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre as Telhas de zinco disponíveis ",
   },
   {    
     id: 25,
-    name: "Ródio",
-    description: "Peças de ródio para reciclagem",
-    price: "R$ 200,00/kg",
-    image: "/rodio-reciclagem.png",
-    whatsappMessage: "Olá! Gostaria de saber mais sobre o Ródio disponível.",
+    name: "Malha POP",
+    image: "/malha-pop2.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre as Malhas POP disponíveis ",
   },
   {    
     id: 26,
-    name: "Ródio",
-    description: "Peças de ródio para reciclagem",
-    price: "R$ 200,00/kg",
-    image: "/rodio-reciclagem.png",
-    whatsappMessage: "Olá! Gostaria de saber mais sobre o Ródio disponível.",
+    name: "Chapas de aço",
+    image: "/chapa.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre  as Chapas de aço disponíveis ",
+  },
+  {    
+    id: 26,
+    name: "Caixa d'água",
+    image: "/caixa-dagua1.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre as Caixas d'água disponíveis ",
   },
   
 ]
@@ -228,19 +203,19 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="produtos">
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
 
-        <div className="text-center mt-12 p-6 bg-card rounded-lg">
+        <div className="text-center mt-12 p-6 bg-card rounded-lg" id="contato">
           <h2 className="text-2xl font-semibold text-primary mb-2">Precisa de algo específico?</h2>
           <p className="text-muted-foreground mb-4">
             Entre em contato conosco pelo WhatsApp para consultar outros materiais disponíveis.
           </p>
           <a
-            href="https://wa.me/5511999999999?text=Olá! Gostaria de consultar sobre materiais de reciclagem disponíveis."
+            href="https://wa.me/5561991011456?text=Olá! Gostaria de consultar sobre materiais disponíveis."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-6 py-3 rounded-lg font-medium hover:bg-secondary/90 transition-colors"
@@ -251,6 +226,22 @@ export default function Home() {
             Falar no WhatsApp
           </a>
         </div>
+
+        <div className="text-center mt-12 p-6 bg-card rounded-lg" id="localizacao">
+          <h2 className="text-2xl font-semibold text-primary mb-2">Localização</h2>
+          <p className="text-muted-foreground mb-4">
+            Esatamos aqui 📍
+          </p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.845887593545!2d-48.0260738!3d-15.969422499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2b7b8f8c0155%3A0xad22483c73aed35f!2sGlobo%20Reciclaveis!5e0!3m2!1spt-BR!2sbr!4v1757005522880!5m2!1spt-BR!2sbr" 
+              className="mx-auto mt-4 w-full max-w-3xl h-[450px] rounded-lg"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+
+        
       </main>
     </div>
   )

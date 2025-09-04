@@ -13,7 +13,7 @@
   --popover-foreground: oklch(0.29 0 0); /* Dark gray popover text */
   --primary: oklch(0.29 0 0); /* Dark gray for primary elements */
   --primary-foreground: oklch(1 0 0); /* White text on primary */
-  --secondary: oklch(0.72 0.15 70); /* Orange (#FF9F00) for CTAs */
+  --secondary: oklch(63.421% 0.18215 146.745); /* Orange (#FF9F00) for CTAs */
   --secondary-foreground: oklch(1 0 0); /* White text on secondary */
   --muted: oklch(0.9 0 0); /* Light gray for muted elements */
   --muted-foreground: oklch(0.29 0 0); /* Dark gray on muted */

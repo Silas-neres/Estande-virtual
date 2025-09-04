@@ -19,7 +19,7 @@ interface ProductCardProps {
 export function ProductCard({ product }: ProductCardProps) {
   const handleWhatsAppClick = () => {
     // Replace with your actual WhatsApp number
-    const phoneNumber = "5511999999999"
+    const phoneNumber = "5561991011456"
     const encodedMessage = encodeURIComponent(product.whatsappMessage)
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
     window.open(whatsappUrl, "_blank")
@@ -43,7 +43,6 @@ export function ProductCard({ product }: ProductCardProps) {
       <CardContent>
         <div className="flex items-center justify-between">
           <span className="text-2xl font-bold text-accent">{product.price}</span>
-          <span className="text-sm text-muted-foreground bg-muted px-2 py-1 rounded">Por kg</span>
         </div>
       </CardContent>
 
