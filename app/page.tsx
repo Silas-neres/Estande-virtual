@@ -1,5 +1,7 @@
 import { ProductCard } from "@/components/product-card"
 import { Header } from "@/components/header"
+import { Description } from "@radix-ui/react-toast"
+import { de } from "date-fns/locale"
 
 // Sample products data - replace with your actual products
 const products = [
@@ -15,7 +17,7 @@ const products = [
     id: 2,
     name: "Perfil 75x40",
     description: "Perfil 75x40 6 metros",
-    price: "R$ 125,00/6m",
+    price: "R$ 115,00/6m",
     image: "/perfil-2.jpg",
     whatsappMessage: "Olá! Gostaria de saber mais sobre os Perfis 75x40 disponíveis.",
   },
@@ -51,24 +53,17 @@ const products = [
     image: "/cano-2.jpg",
     whatsappMessage: "Olá! Gostaria de saber mais sobre os Canos PVC disponíveis ",
   },
+  // daqui
   {
     id: 7,
-    name: "Tinta em Geral",
-    description: "Tintas variadas, a partir de 35,00 a lata de 3,6L, e 250,00 a lata de 18L",
-    price: "R$ 35,00/3,6L",
-    image: "/tinta-1.jpg",
-    whatsappMessage: "Olá! Gostaria de saber mais sobre as Tintas disponíveis ",
-  },
-  {
-    id: 8,
     name: "Malhas",
-    description: "Malhas e Telas soldadas para construção civil",
+    description: "Malhas e Telas soldadas para construção civil a partir de R$ 35,00",
     price: "R$ 35,00",
     image: "/malha-2.jpg",
     whatsappMessage: "Olá! Gostaria de saber mais sobre as Malhas disponíveis ",
   },
   {
-    id: 9,
+    id: 8,
     name: "Treliças",
     description: "Treliças para construção civil",
     price: "R$ 18,00/4m",
@@ -76,55 +71,76 @@ const products = [
     whatsappMessage: "Olá! Gostaria de saber mais sobre as Treliças disponíveis ",
   },
   {
-    id: 10,
+    id: 9,
     name: "Pratileiras",
     description: "Pratileiras 2,40 metros de altura e plataforma de 45cmx92cm",
+    price: "R$ 280,00",
     image: "/pratileira.jpg",
     whatsappMessage: "Olá! Gostaria de saber mais sobre as Pratileiras disponíveis ",
   },
   {
-    id: 11,
+    id: 10,
     name: "Base caixa d'água",
     description: "Base para caixa d'água 500L, 1000L e 2000L",
+    price: "R$ 1200,00",
     image: "/base-dagua-1.jpg",
     whatsappMessage: "Olá! Gostaria de saber mais sobre as Bases para caixa d'água disponíveis ",
   },
   {
-    id: 12,
+    id: 11,
     name: "Ferros de obra",
     description: "Ferros de obra 6 - 25 mm",
+    price: "R$ 5,00",
     image: "/ferro-obra-1.jpg",
     whatsappMessage: "Olá! Gostaria de saber mais sobre os Ferros de obra disponíveis ",
   },
   {
-    id: 13,
+    id: 12,
     name: "Taças d'água",
+    Description: "Taças d'água de qualidade",
+    price: "R$ 24000,00",
     image: "/taça-dagua-2.jpg",
     whatsappMessage: "Olá! Gostaria de saber mais sobre as Taças d'água disponíveis ",
   },
-  {
+  {    
+    id: 13,
+    name: "Telhas de zinco",
+    Description: "Telhas de zinco no metro",
+    price: "R$ 30,00/m",
+    image: "/telha de zinco.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre as Telhas de zinco disponíveis ",
+  },
+  {    
     id: 14,
-    name: "Variados",
-    image: "/imagens_combinadas.jpg",
-    whatsappMessage: "Olá! Gostaria de saber mais sobre os materiais variados disponíveis ",
+    name: "Chapas antiderrapantes unidade",
+    description: "Chapas antiderrapantes unidade ",
+    price: "R$ 1600,00",
+    image: "/chapa.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre  as Chapas de aço disponíveis ",
   },
   {
     id: 15,
-    name: "Cantoneiras",
+    name: "Cantoneiras", 
+    description: "Cantoneiras no KG",
+    price: "R$ 5,00/Kg",
     image: "/cantoneira.jpg",
     whatsappMessage: "Olá! Gostaria de saber mais sobre as Cantoneiras disponíveis ",
   },    
   {
     id: 16,
-    name: "Pedras de mármore",
-    image: "/pedra-marmore-1.jpg",
-    whatsappMessage: "Olá! Gostaria de saber mais sobre as Pedras de mármore disponíveis ",  
-  },
+    name: "Motrores",
+    description: "Motores por cv",
+    price: "R$ 300,00",
+    image: "/motor-3.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre os Motores disponíveis ",
+  }, 
   {
     id: 17,
-    name: "Argamamassa, gesso e rejunte",
-    image: "/argamassas_combinadas.jpg",
-    whatsappMessage: "Olá! Gostaria de saber mais sobre as Argamassas, gesso e rejunte disponíveis ",
+    name: "Vigas",
+    description: "Vigas no Kg",
+    price: "R$ 6,00/Kg",
+    image: "/viga-1.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre as Vigas disponíveis ",
   },
   {
     id: 18,
@@ -140,52 +156,24 @@ const products = [
   },
   {
     id: 20,
-    name: "Vigas",
-    image: "/viga-1.jpg",
-    whatsappMessage: "Olá! Gostaria de saber mais sobre as Vigas disponíveis ",
-  },
-  {
-    id: 21,
     name: "Escada",
+    description: "Consulte os valores",
     image: "/escada-1.jpg",
     whatsappMessage: "Olá! Gostaria de saber mais sobre as Escadas disponíveis ",
-  },
-  {
-    id: 22,
-    name: "Motrores",
-    image: "/motor-3.jpg",
-    whatsappMessage: "Olá! Gostaria de saber mais sobre os Motores disponíveis ",
-  },  
+  }, 
   { 
-    id: 23,
+    id: 21,
     name: "Pilares estruturais",
     image: "/pilar-estrutural-1.jpg",
     whatsappMessage: "Olá! Gostaria de saber mais sobre os Pilares estruturais disponíveis ",
   },
-  {    
-    id: 24,
-    name: "Telhas de zinco",
-    image: "/telha de zinco.jpg",
-    whatsappMessage: "Olá! Gostaria de saber mais sobre as Telhas de zinco disponíveis ",
+  {
+    id: 22,
+    name: "Variados",
+    image: "/imagens_combinadas.jpg",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre os materiais variados disponíveis ",
   },
-  {    
-    id: 25,
-    name: "Malha POP",
-    image: "/malha-pop2.jpg",
-    whatsappMessage: "Olá! Gostaria de saber mais sobre as Malhas POP disponíveis ",
-  },
-  {    
-    id: 26,
-    name: "Chapas de aço",
-    image: "/chapa.jpg",
-    whatsappMessage: "Olá! Gostaria de saber mais sobre  as Chapas de aço disponíveis ",
-  },
-  {    
-    id: 26,
-    name: "Caixa d'água",
-    image: "/caixa-dagua1.jpg",
-    whatsappMessage: "Olá! Gostaria de saber mais sobre as Caixas d'água disponíveis ",
-  },
+
   
 ]
 
