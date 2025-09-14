@@ -184,7 +184,7 @@ export default function Home() {
 
       <main className="container mx-auto px-4 py-8">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-primary mb-4 text-balance">Estande Virtual de Reciclagem</h1>
+          <h1 className="text-4xl font-bold text-primary mb-4 text-balance">Estande Virtual Globo Reciclaveis</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
             Encontre os melhores materiais recicláveis com qualidade garantida. Entre em contato via WhatsApp para mais
             informações e negociação.
